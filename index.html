@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/root-variables.css">
+    <link rel="stylesheet" href="./styles/general-grid.css">
+    <link rel="stylesheet" href="./styles/general.css">
+
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/aside.css">
+
+    <link rel="stylesheet" href="./styles/video-block-common.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/carousel.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <title>Bulka TV</title>
+
+    <script src="https://kit.fontawesome.com/0c1578a4f9.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="general-wrapper">
+        <header class="header">
+            <div class="logo-container"><span class="fas fa-cat"></span><span>Bulka&nbsp;TV</span></div>
+            <form action="#">
+                <div class="search-container">
+                    <input type="text" name="search" placeholder="Search..." id="search-field">
+                    <button type="button" id="search-button"><span class="fa fa-search"></span></button>
+                    <button type="button" class="grey-button" id="voice-button"><span class="fa fa-microphone"></span></button>
+                </div>
+            </form>
+            <div class="profile-container">
+                <button type="button" class="grey-button"><span class="fas fa-bell"></span></button>
+                <div class="profile-menu">
+                    <button type="button" class="icon"><span class="fas fa-paw"></span></button>
+                    <ul class="dropdown">
+                        <li class="dropdown-item"><span class="fas fa-paw"></span><span>Profile</span></li>
+                        <li class="dropdown-item"><span class="fas fa-cog"></span><span>Settings</span></li>
+                        <li class="dropdown-item"><span class="fas fa-sign-out-alt"></span><span>Log Out</span></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <aside class="aside">
+            <ul class="streamers">
+                <li class="streamers-item online">
+                    <div class="logo-name-wrapper">
+                        <img class="icon" src="./images/cat-icons/ChuChu.svg" alt="icon">
+                        <span class="name">ChuChu</span>
+                    </div>
+                    <span class="viewers">5.3K</span>
+                </li>
+                <li class="streamers-item">
+                    <div class="logo-name-wrapper">
+                        <img class="icon" src="./images/cat-icons/CoCo.svg" alt="icon">
+                        <span class="name">CoCo CoCo CoCo</span>
+                    </div>
+                    <span class="viewers">5.2K</span>
+                </li>
+                <li class="streamers-item online">
+                    <div class="logo-name-wrapper">
+                        <img class="icon" src="./images/cat-icons/DoDo.svg" alt="icon">
+                        <span class="name">DoDo</span>
+                    </div>
+                    <span class="viewers">1.2K</span>
+                </li>
+                <li class="streamers-item">
+                    <div class="logo-name-wrapper">
+                        <img class="icon" src="./images/cat-icons/LaLa.svg" alt="icon">
+                        <span class="name">LaLa</span>
+                    </div>
+                    <span class="viewers">3.2K</span>
+                </li>
+                <li class="streamers-item">
+                    <div class="logo-name-wrapper">
+                        <img class="icon" src="./images/cat-icons/MoMo.svg" alt="icon">
+                        <span class="name">MoMo</span>
+                    </div>
+                    <span class="viewers">2.2K</span>
+                </li>
+                <li class="streamers-item online">
+                    <div class="logo-name-wrapper">
+                        <img class="icon" src="./images/cat-icons/NaNa.svg" alt="icon">
+                        <span class="name">NaNa</span>
+                    </div>
+                    <span class="viewers">6.2K</span>
+                </li>
+                <li class="streamers-item online">
+                    <div class="logo-name-wrapper">
+                        <img class="icon" src="./images/cat-icons/ToTo.svg" alt="icon">
+                        <span class="name">ToTo</span>
+                    </div>
+                    <span class="viewers">0.2K</span>
+                </li>
+                <li class="streamers-item online">
+                    <div class="logo-name-wrapper">
+                        <img class="icon" src="./images/cat-icons/TT.svg" alt="icon">
+                        <span class="name">TT</span> 
+                    </div>
+                    <span class="viewers">1.2K</span>
+                </li>
+            </ul>    
+
+            <div class="info">
+                <div class="grid">
+                    <span class="text"><span>Join the Bulka's community!</span></span>
+                    <ul class="icons">
+                        <li class="icon-item-telegram fab fa-telegram"></li>
+                        <li class="icon-item-instagram fab fa-instagram"></li>
+                        <li class="icon-item-facebook fab fa-facebook"></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <div class="main-wrapper">
+            <main class="main">
+                <ul class="сategories">
+                    <li>All</li>
+                    <li>Food</li>
+                    <li>Music</li>
+                    <li>Humans</li>
+                    <li>Games</li>
+                    <li>Computers</li>
+                    <li>Comedies</li>
+                    <li>Apartments</li>
+                    <li>Politics</li>
+                    <li>Travelling</li>
+                    <li>Fashion</li>
+                    <li>Cooking show</li>
+                    <li>Swimming</li>
+                    <li>Human fun videos</li>
+                    <li>Films</li>
+                    <li>Series</li>
+                </ul>
+                <div class="carousel">
+                    <input type="radio" name="slider" id="item-1" checked>
+                    <input type="radio" name="slider" id="item-2">
+                    <input type="radio" name="slider" id="item-3">
+                    <input type="radio" name="slider" id="item-4">
+                    <input type="radio" name="slider" id="item-5">
+                    <input type="radio" name="slider" id="item-6">
+                    <input type="radio" name="slider" id="item-7">
+                  <div class="cards">
+                    <label class="card" for="item-1" id="card-1">
+                        <span class="video-block">
+                            <span class="video">
+                               <img class="video-image" src="./images/videos/all_gone.jpg" alt="all_gone.jpg"> 
+                               <span class="online">LIVE</span>
+                               <span class="meta-video">5.3K viewers</span>
+                               <span class="play fas fa-paw"></span>
+                            </span>
+                            <img class="icon" src="./images/cat-icons/CoCo.svg" alt="icon">
+                            <span class="name">Where Have All the Cats Gone?</span>
+                            <span class="streamer">CoCo</span>
+                            <span class="description">Having regained his old powers (and picked up some new ones, too), LuLu the Cat is back to his usual tricks with his friends DoDo and DD, as well as the mysterious Master MoMo.
+                                Everything is back to normal… or is it? Not according to Professor CoCo, the most scientific cat in the world! Professor CoCo’s discovered a secret that might change the world, and it’s up to LuLu and his friends to make things right!</span>
+                        </span>
+                    </label>
+                    <label class="card" for="item-2" id="card-2">
+                        <span class="video-block">
+                            <span class="video">
+                               <img class="video-image" src="./images/videos/cat_destruction_challenge.jpg" alt="cat_destruction_challenge.jpg"> 
+                               <span class="online">LIVE</span>
+                               <span class="meta-video">1.2K viewers</span>
+                               <span class="play fas fa-paw"></span>
+                            </span>
+                            <img class="icon" src="./images/cat-icons/ChuChu.svg" alt="icon">
+                            <span class="name">Cat Obstacle Destruction Challenge!</span>
+                            <span class="streamer">ChuChu</span>
+                            <span class="description">Today, I entertained my cats with a lot of red cups!</span>
+                        </span>
+                    </label>
+                    <label class="card" for="item-3" id="card-3">
+                        <span class="video-block">
+                            <span class="video">
+                               <img class="video-image" src="./images/videos/catnip_room.jpg" alt="catnip_room.jpg"> 
+                               <span class="meta-video">27:19</span>
+                               <span class="play fas fa-paw"></span>
+                            </span>
+                            <img class="icon" src="./images/cat-icons/DoDo.svg" alt="icon">
+                            <span class="name">Catnip Room of Danger!</span>
+                            <span class="streamer">DoDo</span>
+                            <span class="description">Today, I gave my cats enough catnip to fill a house!</span>
+                        </span>
+                    </label>
+                    <label class="card" for="item-4" id="card-4">
+                        <span class="video-block">
+                            <span class="video">
+                                <img class="video-image" src="./images/videos/cats_vs_200_brushes.jpg" alt="cats_vs_200_brushes.jpg"> 
+                                <span class="meta-video">24:15</span>
+                                <span class="play fas fa-paw"></span>
+                             </span>
+                             <img class="icon" src="./images/cat-icons/LaLa.svg" alt="icon">
+                             <span class="name">Cats vs 200 Brushes</span>
+                             <span class="streamer">LaLa</span>
+                            <span class="description">Today, I presented my cats with a ton of cat brushes!</span>
+                        </span>
+                    </label>
+                    <label class="card" for="item-5" id="card-5">
+                        <span class="video-block">
+                            <span class="video">
+                                <img class="video-image" src="./images/videos/cats_vs_giant_bugs.jpg" alt="cats_vs_giant_bugs.jpg"> 
+                                <span class="online">LIVE</span>
+                                <span class="meta-video">0.7K viewers</span>
+                                <span class="play fas fa-paw"></span>
+                             </span>
+                             <img class="icon" src="./images/cat-icons/MoMo.svg" alt="icon">
+                             <span class="name">Cats vs Giant Bugs</span>
+                             <span class="streamer">MoMo</span>
+                            <span class="description">My cats froze up after seeing a bunch of bugs!</span>
+                        </span>
+                    </label>
+                    <label class="card" for="item-6" id="card-6">
+                        <span class="video-block">
+                            <span class="video">
+                                <img class="video-image" src="./images/videos/cats_vs_giant_tree.jpg" alt="cats_vs_giant_tree.jpg"> 
+                                <span class="meta-video">14:27</span>
+                                <span class="play fas fa-paw"></span>
+                             </span>
+                             <img class="icon" src="./images/cat-icons/NaNa.svg" alt="icon">
+                             <span class="name">Cats vs Giant Tree Monster!</span>
+                             <span class="streamer">NaNa</span>
+                            <span class="description">Today, my cats joined forces to fight against a giant leafy intruder!</span>
+                        </span>
+                    </label>
+                    <label class="card" for="item-7" id="card-7">
+                        <span class="video-block">
+                            <span class="video">
+                                <img class="video-image" src="./images/videos/treat_cup_challenge.jpg" alt="treat_cup_challenge.jpg"> 
+                                <span class="meta-video">10:00</span>
+                                <span class="play fas fa-paw"></span>
+                             </span>
+                             <img class="icon" src="./images/cat-icons/ToTo.svg" alt="icon">
+                             <span class="name">Treat Cup Challenge!</span>
+                             <span class="streamer">ToTo</span>
+                            <span class="description">Today, I challenged my cats to solve 3 different puzzles for cat treats!</span>
+                        </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="video-container">
+                    <div class="video-block">
+                        <div class="video">
+                           <img class="video-image" src="./images/videos/all_gone.jpg" alt="all_gone.jpg"> 
+                           <span class="online">LIVE</span>
+                           <span class="meta-video">5.3K viewers</span>
+                           <span class="play fas fa-paw"></span>
+                        </div>
+                        <img class="icon" src="./images/cat-icons/CoCo.svg" alt="icon">
+                        <span class="name">Where Have All the Cats Gone?</span>
+                        <span class="streamer">CoCo</span>
+                        <span class="additional fas fa-ellipsis-v"></span>
+                    </div>
+                    <div class="video-block">
+                        <div class="video">
+                           <img class="video-image" src="./images/videos/cat_destruction_challenge.jpg" alt="cat_destruction_challenge.jpg"> 
+                           <span class="online">LIVE</span>
+                           <span class="meta-video">1.2K viewers</span>
+                           <span class="play fas fa-paw"></span>
+                        </div>
+                        <img class="icon" src="./images/cat-icons/ChuChu.svg" alt="icon">
+                        <span class="name">Cat Obstacle Destruction Challenge!</span>
+                        <span class="streamer">ChuChu</span>
+                        <span class="additional fas fa-ellipsis-v"></span>
+                    </div>
+                    <div class="video-block">
+                        <div class="video">
+                           <img class="video-image" src="./images/videos/catnip_room.jpg" alt="catnip_room.jpg"> 
+                           <span class="meta-video">27:19</span>
+                           <span class="play fas fa-paw"></span>
+                        </div>
+                        <img class="icon" src="./images/cat-icons/DoDo.svg" alt="icon">
+                        <span class="name">Catnip Room of Danger!</span>
+                        <span class="streamer">DoDo</span>
+                        <span class="additional fas fa-ellipsis-v"></span>
+                    </div>
+                    <div class="video-block">
+                        <div class="video">
+                           <img class="video-image" src="./images/videos/cats_vs_200_brushes.jpg" alt="cats_vs_200_brushes.jpg"> 
+                           <span class="meta-video">24:15</span>
+                           <span class="play fas fa-paw"></span>
+                        </div>
+                        <img class="icon" src="./images/cat-icons/LaLa.svg" alt="icon">
+                        <span class="name">Cats vs 200 Brushes</span>
+                        <span class="streamer">LaLa</span>
+                        <span class="additional fas fa-ellipsis-v"></span>
+                    </div>
+                    <div class="video-block">
+                        <div class="video">
+                           <img class="video-image" src="./images/videos/cats_vs_giant_bugs.jpg" alt="cats_vs_giant_bugs.jpg"> 
+                           <span class="online">LIVE</span>
+                           <span class="meta-video">0.7K viewers</span>
+                           <span class="play fas fa-paw"></span>
+                        </div>
+                        <img class="icon" src="./images/cat-icons/MoMo.svg" alt="icon">
+                        <span class="name">Cats vs Giant Bugs</span>
+                        <span class="streamer">MoMo</span>
+                        <span class="additional fas fa-ellipsis-v"></span>
+                    </div>
+                    <div class="video-block">
+                        <div class="video">
+                           <img class="video-image" src="./images/videos/cats_vs_giant_tree.jpg" alt="cats_vs_giant_tree.jpg"> 
+                           <span class="meta-video">14:27</span>
+                           <span class="play fas fa-paw"></span>
+                        </div>
+                        <img class="icon" src="./images/cat-icons/NaNa.svg" alt="icon">
+                        <span class="name">Cats vs Giant Tree Monster!</span>
+                        <span class="streamer">NaNa</span>
+                        <span class="additional fas fa-ellipsis-v"></span>
+                    </div>
+                    <div class="video-block">
+                        <div class="video">
+                           <img class="video-image" src="./images/videos/treat_cup_challenge.jpg" alt="treat_cup_challenge.jpg"> 
+                           <span class="meta-video">10:00</span>
+                           <span class="play fas fa-paw"></span>
+                        </div>
+                        <img class="icon" src="./images/cat-icons/ToTo.svg" alt="icon">
+                        <span class="name">Treat Cup Challenge!</span>
+                        <span class="streamer">ToTo</span>
+                        <span class="additional fas fa-ellipsis-v"></span>
+                    </div>
+                    <div class="video-block">
+                        <div class="video">
+                           <img class="video-image" src="./images/videos/waterproof_barrier.jpg" alt="waterproof_barrier.jpg"> 
+                           <span class="online">LIVE</span>
+                           <span class="meta-video">2.9K viewers</span>
+                           <span class="play fas fa-paw"></span>
+                        </div>
+                        <img class="icon" src="./images/cat-icons/TT.svg" alt="icon">
+                        <span class="name">Waterproof Barrier!</span>
+                        <span class="streamer">TT</span>
+                        <span class="additional fas fa-ellipsis-v"></span>
+                    </div>
+                    <div class="video-block">
+                        <div class="video">
+                           <img class="video-image" src="./images/videos/who_will_take_it.jpg" alt="who_will_take_it.jpg"> 
+                           <span class="meta-video">5:13</span>
+                           <span class="play fas fa-paw"></span>
+                        </div>
+                        <img class="icon" src="./images/cat-icons/CoCo.svg" alt="icon">
+                        <span class="name">DoDo Challenged LuLu!</span>
+                        <span class="streamer">CoCo</span>
+                        <span class="additional fas fa-ellipsis-v"></span>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="footer">
+                <span class="text">Inspired by 7 hometask Binary Studio Academy 2021</span>
+                <img class="logo" src="./images/bsa-logo.png" alt="bsa-logo.png">
+            </footer>
+        </div>
+
+    </div>
+</body>
+</html>
