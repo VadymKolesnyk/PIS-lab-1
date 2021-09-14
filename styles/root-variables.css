@@ -1,0 +1,11 @@
+:root {
+    --header-footer-height : 50px;
+    --aside-small-width : 70px;
+    --aside-big-width : 250px;
+    --indent: 10px;
+
+    --streamers-height : 50px;
+
+    --theme-color-darker: rgb(221, 221, 221);
+    --theme-color-lighter: rgb(233, 233, 233);
+}

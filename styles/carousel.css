@@ -1,0 +1,157 @@
+.carousel {
+    width: 100%;
+    height: 300px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--indent);
+}
+
+
+.carousel input[type=radio] {
+    display: none;
+}
+  
+.carousel .card {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: transform .4s ease;
+    cursor: pointer;
+    display: none;
+}
+  
+.carousel  .cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+} 
+
+.carousel .video-block {
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+    "video icon name"
+    "video icon streamer"
+    "video description description";
+    grid-template-columns: 60% auto 1fr;
+    grid-template-rows: auto auto 1fr;
+    background-color: var(--theme-color-lighter);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, .5);
+}
+
+.carousel .video-block .description {
+    grid-area: description;
+    margin: var(--indent);
+    display: block;
+    overflow: auto;
+}
+
+.carousel .video {
+    overflow: hidden;
+    margin: 0;
+} 
+
+.carousel .video .video-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.carousel .video-block .icon,
+.carousel .video-block .name {
+    margin-top: var(--indent);
+}
+
+#item-1:checked ~ .cards #card-5, 
+#item-2:checked ~ .cards #card-6, 
+#item-3:checked ~ .cards #card-7,
+#item-4:checked ~ .cards #card-1,
+#item-5:checked ~ .cards #card-2,
+#item-6:checked ~ .cards #card-3,
+#item-7:checked ~ .cards #card-4 {
+    transform: translatex(-40%) scale(.6);
+    z-index: 0;
+    display: block;
+}
+
+#item-1:checked ~ .cards #card-6, 
+#item-2:checked ~ .cards #card-7, 
+#item-3:checked ~ .cards #card-1,
+#item-4:checked ~ .cards #card-2,
+#item-5:checked ~ .cards #card-3,
+#item-6:checked ~ .cards #card-4,
+#item-7:checked ~ .cards #card-5 {
+    transform: translatex(-40%) scale(.6);
+    z-index: 1;
+    display: block;
+}
+  
+#item-1:checked ~ .cards #card-4, 
+#item-2:checked ~ .cards #card-5, 
+#item-3:checked ~ .cards #card-6,
+#item-4:checked ~ .cards #card-7,
+#item-5:checked ~ .cards #card-1,
+#item-6:checked ~ .cards #card-2,
+#item-7:checked ~ .cards #card-3 {
+    transform: translatex(40%) scale(.6);
+    z-index: 0;
+    display: block;
+}
+
+#item-1:checked ~ .cards #card-3, 
+#item-2:checked ~ .cards #card-4, 
+#item-3:checked ~ .cards #card-5,
+#item-4:checked ~ .cards #card-6,
+#item-5:checked ~ .cards #card-7,
+#item-6:checked ~ .cards #card-1,
+#item-7:checked ~ .cards #card-2 {
+    transform: translatex(40%) scale(.6);
+    z-index: 1;
+    display: block;
+}
+
+
+#item-1:checked ~ .cards #card-7, 
+#item-2:checked ~ .cards #card-1, 
+#item-3:checked ~ .cards #card-2,
+#item-4:checked ~ .cards #card-3,
+#item-5:checked ~ .cards #card-4,
+#item-6:checked ~ .cards #card-5,
+#item-7:checked ~ .cards #card-6 {
+    transform: translatex(-20%) scale(.8);
+    z-index: 2;
+    display: block;
+}
+  
+#item-1:checked ~ .cards #card-2, 
+#item-2:checked ~ .cards #card-3, 
+#item-3:checked ~ .cards #card-4,
+#item-4:checked ~ .cards #card-5,
+#item-5:checked ~ .cards #card-6,
+#item-6:checked ~ .cards #card-7,
+#item-7:checked ~ .cards #card-1 {
+    transform: translatex(20%) scale(.8);
+    z-index: 2;
+    display: block;
+}
+  
+#item-1:checked ~ .cards #card-1, 
+#item-2:checked ~ .cards #card-2, 
+#item-3:checked ~ .cards #card-3,
+#item-4:checked ~ .cards #card-4,
+#item-5:checked ~ .cards #card-5,
+#item-6:checked ~ .cards #card-6,
+#item-7:checked ~ .cards #card-7 {
+    transform: translatex(0) scale(1);
+    z-index: 3;
+    display: block;   
+}

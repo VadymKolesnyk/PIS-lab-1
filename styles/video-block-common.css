@@ -1,0 +1,89 @@
+
+
+.video-block .video {
+    grid-area: video;
+    position: relative;
+}
+
+.video .video-image {
+    width: 100%;
+    display: block;
+    
+}
+
+.video span {
+    position: absolute;
+    border-radius: 2px;
+    color: white;
+    padding: 1px 3px;
+    z-index: 1;
+}
+
+.video .online {
+    top: 5px;
+    left: 5px;
+    background-color: red;
+}
+.video .meta-video {
+    bottom: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.video .play {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: fadein .6s;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.video:hover .play {
+    display: flex;
+}
+
+.video-block .icon {
+    grid-area: icon;
+    height: var(--streamers-height);
+    margin: 0 var(--indent);
+    cursor: pointer;
+}
+
+.video-block .name,
+.video-block .streamer {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    display: block;
+    cursor: pointer;
+} 
+
+.video-block .name:hover,
+.video-block .streamer:hover {
+    color: orange;
+} 
+
+.video-block .name {
+    grid-area: name;
+    font-weight: bolder;
+}
+
+.video-block .streamer {
+    grid-area: streamer;
+    color: gray;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
